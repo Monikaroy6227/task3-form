@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form response view</title>
+    <link rel="stylesheet" href="formstyle.css">
+    <script src="formjavascript"></script>
+</head>
+
+<body>
+    <header>
+        <h1>LGM TASK 3</h1>
+    </header>
+    <div id="container">
+        <form id="form" name="myform">
+            <fieldset>
+                <h2>STUDENT ENROLLMENT FORM</h2>
+                <div id="name"> user name:* <input type="text" name="name" id="fname" placeholder="name" required></div>
+                <p> contact number:*<input type="text" name="number" id="phone" placeholder="91+" required></p>
+                </p>
+                <p> mail:*<input type="email" name="mail" id="mail" required></p>
+                <label for="gender">gender</label>
+                <br>
+                <input type="radio" name="gender" value="Female">Female<br>
+                <input type="radio" name="gender" value="Male">Male<br>
+                <input type="radio" name="gender" value="Others">Others<br>
+
+                <label for="skills">skills*</label>
+                <br>
+                <label><input type="checkbox" name="skill" id="html" value="HTML">HTML</label>
+                <label> <input type="checkbox" name="skill" id="css" value="CSS">CSS</label>
+                <label> <input type="checkbox" name="skill" id="js" value="JS">JS</label>
+
+
+                <input type="submit" value="submit" onclick="check();return false">
+                <input type="reset" value="reset">
+            </fieldset>
+        </form>
+        <div id="user"><b>USER DETAILS</b>
+            <div class="card" id="details1"> <img src="th (2).jpg" alt="Avatar"
+                    style="width:5cm; height:5cm; display: none;" id="img1"></img></div>
+            <p id="details6"> </p>
+            <p id="details2"></p>
+            <p id="details3"></p>
+            <p id="details4"></p>
+            <p id="details5"></p>
+        </div>
+    </div>
+</body>
+</html>
